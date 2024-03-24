@@ -19,7 +19,7 @@ def converted_filename(filepath, converted_tag=CONVERTED_TAG):
 
 
 def run_update(path, converted_tag=CONVERTED_TAG):
-    video_filetypes = [f'{path}/**/*.mp4', f'{path}/**/*.avi', f'{path}/**/*.mkv']
+    video_filetypes = [f'{path}/**/*.mp4', f'{path}/**/*.avi', f'{path}/**/*.mkv', f'{path}/**/*.mov']
     video_files = []
     for filetype in video_filetypes:
         video_files.extend(glob.glob(filetype, recursive=True))
